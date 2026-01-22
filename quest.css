@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body { 
+    min-height: 100vh;
+    background: #000; 
+
+}
+body::before { 
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(120deg, #0a1d3a, #000);
+    z-index: -1;
+}
+
+.navbar {
+  width: 95%;
+  max-width: 1700px;
+  margin: 20px auto;
+  padding: 12px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4)
+}
+.navbarlocation {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  padding-top: 5px;
+  height: auto;
+}
+
+.name {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+
+  padding: 8px 18px;
+  border-radius: 999px;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  backdrop-filter: blur(10px);
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  box-shadow:
+    inset 0 0 0 1px rgba(0, 0, 0, 0.6),
+    0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.exercise-detail-layout {
+  width: 90%;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.exercise-image {
+  display: flex;
+  justify-content: center;
+}
+
+.exercise-image img {
+  width: 100%;
+  max-width: 450px;   /* 👈 คุมขนาดรูป */
+  height: auto;
+
+  border-radius: 20px;
+  background: white;
+  padding: 16px;
+}
+
+/* Right content */
+.exercise-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Problem box */
+.problem-box {
+  padding: 30px;
+  border-radius: 25px;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  background: rgba(255,255,255,0.05);
+  line-height: 1.6;
+}
+
+/* Buttons */
+.exercise-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.codebtn {
+  text-align: center;
+  padding: 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255,255,255,0.3);
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.codebtn:hover {
+  border-color: #9b5cff;
+  background: rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 20px #9b5cff55;
+}
