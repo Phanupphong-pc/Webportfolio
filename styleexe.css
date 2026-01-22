@@ -124,3 +124,21 @@ body::before {
   text-align: center;
   margin-top: 120px;
 }
+
+@media (max-width: 480px) {
+  .exebox {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .exebox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 769px) {
+  .exebox {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

@@ -141,3 +141,44 @@ body::before {
   background: rgba(0, 0, 0, 0.35);
   box-shadow: 0 0 20px #9b5cff55;
 }
+
+@media (max-width: 600px) {
+  .exercise-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .exercise-content {
+    order: 1;
+  }
+  .exercise-image {
+    order: 2;
+  }
+  .exercise-buttons {
+    order: 3;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .exercise-detail-layout {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .exercise-content {
+    order: 1;
+  }
+  .exercise-image {
+    order: 2;
+  }
+}
+
+@media (min-width: 901px) {
+  .exercise-detail-layout {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .exercise-image {
+    order: 1;
+  }
+  .exercise-content {
+    order: 2;
+  }
+}
